@@ -1,0 +1,605 @@
+
+body {
+    font-family: 'Roboto Bold', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    color: #677389;
+    background-color: #ffffff;
+}
+
+/**********************************************/
+/*              Header / Menubar              */
+/**********************************************/
+
+header {
+    background-color: rgba(247, 247, 247, 0.32);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 18px 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 3.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li:last-child {
+    margin-right: 100px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #677389;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #262f38;
+}
+
+
+.download-button a {
+    background-color: #4CAFEB;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.download-button img {
+    filter: invert(100%) sepia(3%) saturate(0%) hue-rotate(158deg) brightness(204%) contrast(104%);
+}
+
+.download-button a:hover {
+    background-color: #6ccbea;
+}
+
+/**********************************************/
+/*                   Footer                   */
+/**********************************************/
+
+.footer {
+    background-color: #f2f5f9;
+    color: #333;
+    padding: 60px 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    align-content: center;
+    align-items: center;
+}
+
+.footer-section {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-left: 6.2rem;
+    margin-right: 2.6rem;
+    white-space: nowrap;
+}
+
+.footer-section h3 {
+    background: -webkit-radial-gradient(circle, #e97d9c 10%, #ae9ae6 50%, #6ccbea 90%);
+    /*background: linear-gradient(220deg, #e97d9c, #ae9ae6, #6ccbea);*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    border-bottom: none;
+}
+
+.footer-section.links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul li a {
+    text-decoration: none;
+    color: #677389;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-section.links ul li a:hover {
+    color: #262f38;
+
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid #cccccc;
+    font-size: 0.8rem;
+}
+
+.footer-bottom a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+
+/**********************************************/
+/*              Wide Screen Mode              */
+/**********************************************/
+@media only screen and (min-width: 2200px) {
+    .logo {
+        margin-left: 14rem;
+    }
+
+    .download-button {
+        margin-right: 14rem;
+    }
+
+    .featured-text {
+        margin-left: 20.5rem;
+        margin-right: 14.5rem;
+        padding: 0;
+        white-space: nowrap;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        margin-left: 0.5rem;
+        margin-right: 4.5rem !important;
+        white-space: nowrap;
+    }
+
+    .logos img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content, .additional-content {
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+
+    .dark-section img {
+        position: absolute;
+        height: 550px;
+        width: auto;
+        left: 100px;
+        top: -100px;
+        z-index: 1;
+        border-radius: 12px;
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+    .dark-section {
+        min-height: 250px;
+    }
+
+    .dark-section .text-content {
+        flex: 1;
+        z-index: 2;
+        margin-left: 800px !important;
+        margin-right: 300px !important;
+    }
+
+    .footer {
+        padding: 60px 35rem;
+    }
+
+    .footer-section {
+        margin-left: 4.6rem;
+        margin-right: 2.6rem;
+    }
+
+}
+
+/**********************************************/
+/*                Desktop Mode                */
+/**********************************************/
+
+@media only screen and (min-width: 1000px) {
+    /* ... Hide mobile hamburger menu ... */
+    .menu, .menu-icon, .menu a, .menu-icon img, .close-icon, .close-icon a, .download-button-mobile, .download-button-mobile a,
+    .download-button-mobile img {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .content {
+        display: flex;
+    }
+
+    /**********************************************/
+    /*              Landing Content               */
+    /**********************************************/
+    .text-section {
+        flex: 1;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 125px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .text-section h1 {
+        font-size: 58px;
+        line-height: 1;
+        letter-spacing: -2px;
+        color: #2d2d2d;
+    }
+
+    .text-section h1 span {
+        /*color: #2d679d;*/
+        background: -webkit-radial-gradient(circle, #e97d9c 0%, #ae9ae6 50%, #6ccbea 90%);
+        /*background: linear-gradient(45deg, #e97d9c, #ae9ae6, #6ccbea);*/
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .text-section p {
+        font-weight: 400;
+        font-size: 20px;
+        color: #677389;
+        padding-right: 100px;
+    }
+
+    .buttons-section {
+        margin-top: 20px;
+    }
+
+    .buttons-section a {
+        display: inline-block;
+        padding: 16px 40px;
+        border-radius: 7px;
+        margin-right: 20px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .download-button {
+        background-color: #4CAFEB;
+        color: #ffffff;
+    }
+
+
+    .learn-more-button {
+        background-color: #ffffff;
+        color: #4CAFEB;
+        border: 1px solid rgba(23, 22, 22, 0.22);
+    }
+
+    .download-button:hover {
+        background-color: #6ccbea;
+    }
+
+    .learn-more-button:hover {
+        background-color: rgba(108, 203, 234, 0.16);
+    }
+
+    .image-section {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .image-section img {
+        max-width: 110%;
+        width: 110%;
+        max-height: 35%;
+        height: max-content;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    /**********************************************/
+    /*                Featured in                 */
+    /**********************************************/
+    .featured-section {
+        background-color: rgba(230, 241, 247, 0.55);
+        /*background-color: #f2f5f9;*/
+        padding: 120px 100px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: -1298px;
+    }
+
+    .featured-text {
+        flex: 1;
+        font-weight: 700;
+        font-size: 25px;
+        color: #21486b;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logos img {
+        height: 55px;
+        width: auto;
+        margin-right: 20px;
+        padding-left: 10px;
+    }
+
+    /**********************************************/
+    /*             Additional Content             */
+    /**********************************************/
+    .additional-content {
+        display: flex;
+        align-items: center;
+        padding: 70px 100px;
+        position: relative;
+        top: -1198px;
+    }
+
+    .image-container {
+        flex: 1;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+    }
+
+    .text-container-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 50px;
+        padding-left: 50px;
+    }
+
+    .text-container-right h2 {
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #2d2d2d;
+    }
+
+    .text-container-right span, .text-container-left span {
+        /*color: #3982c2;*/
+        background: linear-gradient(45deg, #e97d9c, #ae9ae6, #6ccbea);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 550;
+    }
+
+    .text-container-right p {
+        text-align: left;
+        font-weight: 400;
+        font-size: 18px;
+        color: #677389;
+    }
+
+    .text-container-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-right: 50px;
+        padding-right: 50px;
+    }
+
+    .text-container-left h2 {
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #2d2d2d;
+    }
+
+    .text-container-left p {
+        text-align: left;
+        font-weight: 400;
+        font-size: 18px;
+        color: #677389;
+    }
+
+    /**********************************************/
+    /*              Vertical Content              */
+    /**********************************************/
+    .dark-section {
+        display: flex;
+        align-items: center;
+        background-color: #95a0b4;
+        color: #ffffff;
+        padding: 70px 110px;
+        position: relative;
+        top: -998px;
+        min-height: 250px;
+    }
+
+    .dark-section img {
+        position: absolute;
+        height: 550px;
+        left: 80px;
+        top: -80px;
+        z-index: 1;
+        border-radius: 12px;
+    }
+
+    .dark-section .text-content {
+        flex: 1;
+        z-index: 2;
+        margin-left: 450px;
+    }
+
+    .dark-section p {
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 1.35;
+        font-weight: 400;
+    }
+
+}
+
+/**********************************************/
+/*                 Mobile Mode                */
+/**********************************************/
+
+@media only screen and (max-width: 999px) {
+
+    header {
+        padding: 10px 30px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #f7f7f7;
+        z-index: 1000;
+        padding: 70px;
+        box-sizing: border-box;
+    }
+
+
+    .close-icon {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .close-icon img {
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .menu a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #677389;
+        padding: 20px 0;
+        font-size: 24px;
+    }
+
+    .menu a img {
+        margin-right: 10px;
+    }
+
+    .menu a:hover {
+        color: #333333;
+    }
+
+    .menu a.download-button-mobile {
+        color: #ffffff;
+    }
+
+    .download-button-mobile {
+        display: block;
+        background-color: #3a83c2;
+        color: #ffffff;
+        padding: 20px 20px;
+        text-decoration: none;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .download-button-mobile:hover {
+        background-color: #4CAFEB;
+    }
+
+
+    .download-button-mobile img {
+        margin-left: 20px;
+        filter: invert(100%) sepia(3%) saturate(0%) hue-rotate(158deg) brightness(204%) contrast(104%);
+    }
+
+    .download-button {
+        display: none;
+    }
+
+    .menu-icon img {
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .menu-icon img:hover {
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        filter: invert(46%) sepia(35%) saturate(254%) hue-rotate(180deg) brightness(129%) contrast(88%);
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .text-section h1 {
+        font-size: 24px;
+    }
+
+    .text-section p {
+        font-size: 16px;
+    }
+
+    .buttons-section {
+        margin-top: 20px;
+    }
+}

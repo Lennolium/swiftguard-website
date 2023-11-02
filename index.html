@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>swiftGuard</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icns/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icns/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icns/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./icns/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./icns/favicon/safari-pinned-tab.svg" color="#6ccbea">
+    <meta name="msapplication-TileColor" content="#e97d9c">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+</head>
+<body>
+
+<!-- --------------------------------------- -->
+<!--             Header / Menubar            -->
+<!-- --------------------------------------- -->
+
+<header>
+    <div class="logo">
+        <a href="#">
+            <picture>
+                <source srcset="./imgs/banner_dark.png"
+                        media="(prefers-color-scheme: dark)">
+                <img src="./imgs/banner_light.png"
+                     alt="swiftGuard Banner">
+            </picture>
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="menu-icon">
+        <img src="./icns/menu.svg" alt="Menu" onclick="toggleMenu()">
+    </div>
+    <div class="download-button">
+        <a href="https://github.com/Lennolium/swiftGuard/blob/main/INSTALL.md" target="_blank"><img
+                src="./icns/download.svg" alt="Download Icon"
+                style="vertical-align: text-top; height: 20px; width: 20px; margin-right: 10px;">Download</a>
+    </div>
+</header>
+
+<!-- --------------------------------------- -->
+<!--              Hamburger Menu             -->
+<!-- --------------------------------------- -->
+
+<div class="menu" id="menu">
+    <div class="close-icon" onclick="toggleMenu()">
+        <img src="./icns/x.svg" alt="Close">
+    </div>
+    <a href="index.html"><img src="./icns/home.svg" alt=""> Home</a>
+    <a href="features.html"><img src="./icns/star.svg" alt=""> Features</a>
+    <a href="about.html"><img src="./icns/heart.svg" alt=""> About</a>
+    <a href="contact.html"><img src="./icns/mail.svg" alt=""> Contact</a>
+    <a class="download-button-mobile" href="https://github.com/Lennolium/swiftGuard/blob/main/INSTALL.md"
+       target="_blank"><img src="./icns/download.svg" alt="Download Icon"
+                            style="height: 20px; width: 20px; margin-right: 10px; vertical-align: middle;">Download</a>
+</div>
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("menu");
+        if (menu.style.display === "flex") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";
+        }
+    }
+</script>
+
+<!-- --------------------------------------- -->
+<!--             Landing Content             -->
+<!-- --------------------------------------- -->
+
+<div class="content">
+    <div class="text-section">
+        <h1>Empower your <span>data and privacy defense</span> with swiftGuard</h1>
+        <p>A dependable security solution tailored to your needs. Count on our cutting-edge technologies to safeguard
+            your data. We bring anti-forensic protection to everyone.</p>
+        <div class="buttons-section">
+            <a class="download-button" href="https://github.com/Lennolium/swiftGuard/blob/main/INSTALL.md"
+               target="_blank">Download</a>
+            <a class="learn-more-button" href="features.html">Learn More</a>
+        </div>
+    </div>
+    <div class="image-section">
+        <img src="./imgs/mock-email@2x.png" alt="User interface of swiftGuard">
+    </div>
+</div>
+
+<!-- --------------------------------------- -->
+<!--               Featured in               -->
+<!-- --------------------------------------- -->
+
+<div class="featured-section">
+    <div class="featured-text">Featured in</div>
+    <div class="logos">
+        <a href="https://www.ifun.de/tuersteher-fuer-macos-swiftguard-ueberwacht-usb-ports-220505/"><img
+                src="./imgs/logo-ifun.de.png" alt="iFun"></a>
+        <a href="https://www.apfeltalk.de/magazin/news/swiftguard-ein-kleiner-apptipp-fuer-usb/"><img
+                src="./imgs/logo-apfeltalk.de.png" alt="Apfeltalk"></a>
+        <a href="https://stadt-bremerhaven.de/swiftguard-macos-app-ueberwacht-usb-anschluesse/"><img
+                src="./imgs/logo-caschy.png" alt="Caschys Blog"></a>
+    </div>
+</div>
+
+<!-- --------------------------------------- -->
+<!--       Additional Content (right)        -->
+<!-- --------------------------------------- -->
+
+<div class="additional-content">
+    <div class="image-container-right">
+        <img src="./imgs/mock-pic2@2x.png" alt="Your Image">
+    </div>
+    <div class="text-container-right">
+        <h2>Protects against Data Manipulation</h2>
+        <p>Continuously <span>monitors USB ports</span> for device activity, even in sleep mode. Lightweight and
+            non-intrusive in
+            your system tray.</p>
+    </div>
+</div>
+
+<!-- --------------------------------------- -->
+<!--        Additional Content (left)        -->
+<!-- --------------------------------------- -->
+
+<div class="additional-content">
+    <div class="text-container-left">
+        <h2>Without all the Hassle</h2>
+        <p>Lets you personalize your security measures by defining counter-measures like
+            shutdown or hibernation, countdown timers, auto-start, and <span>authorizing trusted devices</span> for
+            seamless connectivity.</p>
+    </div>
+    <div class="image-container-left">
+        <img src="./imgs/mock-pic3@2x.png" alt="Your Image 2">
+    </div>
+</div>
+
+<!-- --------------------------------------- -->
+<!--       Additional Content (right)        -->
+<!-- --------------------------------------- -->
+
+<div class="additional-content">
+    <div class="image-container-right">
+        <img src="./imgs/mock-pic4@2x.png" alt="Your Image">
+    </div>
+    <div class="text-container-right">
+        <h2>Transparent Security with Community Involvement</h2>
+        <p>Maintains your privacy and security through minimal online connectivity only for update and
+            integrity
+            checks.
+            <span>It is open source</span>, fostering transparency and community collaboration to ensure continuous and
+            secure
+            development.</p>
+        <div class="button-section">
+            <a class="roadmap-button" href="https://github.com/Lennolium/swiftGuard/tree/main#roadmap"
+               target="_blank">Upcoming Features</a>
+        </div>
+    </div>
+
+</div>
+
+<!-- --------------------------------------- -->
+<!--            Vertical Content             -->
+<!-- --------------------------------------- -->
+
+<div class="dark-section">
+    <img src="./imgs/stock-vertical.jpg" alt="Image 3">
+    <div class="text-content">
+        <p>Regarding swiftGuard is a security application and therefore security is of the utmost importance, I am
+            committed to ensuring that it is secure and reliable for all users. I am grateful for any feedback regarding
+            security issues and will do my best to address them as quickly as possible.
+            <br><br>
+            Additionally, I let my code be checked by several code quality and security tools (Bandit, Black, Codacy,
+            CodeQL, PMD CPD, Prospector, Pylint, Pysa, Pyre, Trivy and Radon). These routines are no replacement for a
+            manual code and security audit, but they help to
+            find errors and vulnerabilities.</p>
+    </div>
+</div>
+
+</body>
+
+<!-- --------------------------------------- -->
+<!--                 Footer                  -->
+<!-- --------------------------------------- -->
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section links">
+            <h3>LEARN MORE</h3>
+            <ul>
+                <li><a href="https://github.com/Lennolium/swiftGuard">GitHub Repository</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="https://github.com/Lennolium/swiftGuard/blob/main/INSTALL.md">Download</a></li>
+                <li><a href="https://github.com/Lennolium/swiftGuard/tree/main#roadmap">Roadmap</a></li>
+            </ul>
+        </div>
+        <div class="footer-section links">
+            <h3>SUPPORT</h3>
+            <ul>
+                <li><a href="https://github.com/Lennolium/swiftGuard/wiki">Documentation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">Community</a></li>
+                <li><a href="https://github.com/Lennolium/swiftGuard/blob/main/ACKNOWLEDGMENTS">Acknowledgments</a></li>
+            </ul>
+        </div>
+        <div class="footer-section links">
+            <h3>POLICIES</h3>
+            <ul>
+                <li><a href="legal.html">Legal Notice</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="https://github.com/Lennolium/swiftGuard/blob/main/.github/SECURITY.md">Vulnerability
+                    Reporting</a></li>
+                <li><a href="https://github.com/Lennolium/swiftGuard/blob/main/LICENSE">License</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        Made with <span class="heart">❤️</span>️ by <a href="https://github.com/Lennolium">Lennolium</a>
+        <br><br>Inspired by <a href="https://paretosecurity.com">Pareto Security</a>
+    </div>
+</footer>
+
+</html>
